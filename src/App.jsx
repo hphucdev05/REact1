@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Mycomponent from './learn/MyComponents'
+
 import SecondComponent from './learn/SecondComponent'
 // () => { }
 const App = () => {
@@ -19,7 +19,7 @@ const App = () => {
         </a>
       </div>
       <h1>Hello world
-        <Mycomponent />
+
         <SecondComponent />
 
       </h1>
