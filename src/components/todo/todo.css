@@ -1,6 +1,6 @@
 .todo-container {
     margin: 50px auto;
-    width: 600px;
+    width: 960px;
 
 }
 
@@ -10,6 +10,7 @@
     color: orange;
     text-align: center;
     font-weight: 600;
+
 }
 
 .todo-new {
@@ -20,9 +21,9 @@
 }
 
 .todo-data {
-    margin-top: 20px;
+    margin-top: 15px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 3px solid #ccc;
     padding: 15px;
     display: flex;
     flex-direction: column;

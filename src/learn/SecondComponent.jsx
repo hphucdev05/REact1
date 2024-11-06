@@ -1,6 +1,6 @@
-const Secondcomponent = () => {
-    return (
-        <div>secondcomponent</div>
-    )
+const Secondcomponents = () => {
+    <div>
+        Secondcomponents
+    </div>
 }
-export default Secondcomponent
+export default Secondcomponents
