@@ -11,10 +11,9 @@ const data = {
   address: "ha noi",
   country: "viet nam"
 }
-const addnewtodo = (name) => {
-  alert(`Call me! ${name}`)
-}
 
+
+//{key: value}
 const App = () => {
   const [todoList, setTodolist] = useState([
     { id: 1, name: "Learning React" },
@@ -22,6 +21,17 @@ const App = () => {
 
 
   ])
+  const addnewtodo = (name) => {
+    const newtodo = {
+      id: randomIntFromInterval(1, 1000000),
+      name: name
+    }
+    setTodolist([...todoList, newtodo])// hieu don gian la ...data cu, them data moi vao cuoi data cu
+    //array push
+  }
+  const randomIntFromInterval = (min, max) => { // min and max included 
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  }
   return (
     <div className='todo-container'>
       <div className='todo-title' >Todo List</div>
