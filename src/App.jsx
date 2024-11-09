@@ -27,7 +27,8 @@ const App = () => {
       name: name
     }
     setTodolist([...todoList, newtodo])// hieu don gian la ...data cu, them data moi vao cuoi data cu
-    //array push
+    // array push
+
   }
   const randomIntFromInterval = (min, max) => { // min and max included 
     return Math.floor(Math.random() * (max - min + 1) + min);

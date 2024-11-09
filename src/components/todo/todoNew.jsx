@@ -7,16 +7,18 @@ const TodoNew = (props) => {
     const handleclick = () => {
         console.log("check of value input: ", valueInput)
         addnewtodo(valueInput)
+        setvalueInput("")
     }
-    const [valueInput, setvalueInput] = useState()
-    const handleonchange = (name) => {
+    const [valueInput, setvalueInput] = useState("phuc")
 
+    const handleonchange = (name) => {
         setvalueInput(name)
     }
     return (
         <div className='todo-new'>
             <input type="text"
                 onChange={(event) => handleonchange(event.target.value)}
+                value={valueInput}
             />
             <button style={{ cursor: "pointer" }}
                 onClick={handleclick}
