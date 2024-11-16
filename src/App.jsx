@@ -1,5 +1,6 @@
 import './components/todo/todo.css'
-
+import './components/todo/todoNew'
+import './components/todo/todoData'
 import TodoData from './components/todo/todoData'
 import TodoNew from './components/todo/todoNew'
 import reactlogo from './assets/react.svg'
