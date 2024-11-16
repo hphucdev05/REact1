@@ -9,6 +9,7 @@ import LoginPage from './pages/login.jsx';
 import UserPage from './pages/user.jsx';
 import RegisterPage from './pages/register.jsx';
 import ProductPage from './pages/product.jsx';
+import './styles/global.css'
 
 const router = createBrowserRouter([
   {
