@@ -7,6 +7,8 @@ import reactlogo from './assets/react.svg'
 import { useState } from 'react'
 import Header from './components/layout/header'
 import Footer from './components/layout/footer'
+import { Outlet } from "react-router-dom";
+
 //Usestate dùng để lưu trữ data, còn [todolist,settodolist] là 1 thằng value còn 1 thằng là func
 //để cập nhật value todolist
 const App = () => {
@@ -49,6 +51,7 @@ const App = () => {
           </div>
         }
       </div>
+      <Outlet />
       <Footer />
     </>
   )
