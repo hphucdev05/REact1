@@ -5,7 +5,8 @@ import TodoData from './components/todo/todoData'
 import TodoNew from './components/todo/todoNew'
 import reactlogo from './assets/react.svg'
 import { useState } from 'react'
-
+import Header from './components/layout/header'
+import Footer from './components/layout/footer'
 //Usestate dùng để lưu trữ data, còn [todolist,settodolist] là 1 thằng value còn 1 thằng là func
 //để cập nhật value todolist
 const App = () => {
@@ -30,22 +31,26 @@ const App = () => {
     setTodolist(newtodo)
   }
   return (
-    <div className='todo-container'>
-      <div className='todo-title' >Todo List</div>
-      <TodoNew
-        addnewtodo={addnewtodo}
-      />
-      {todoList.length > 0 ?
-        <TodoData
-          todoList={todoList}
-          deletetodo={deletetodo}
+    <>
+      <Header />
+      <div className='todo-container'>
+        <div className='todo-title' >Todo List</div>
+        <TodoNew
+          addnewtodo={addnewtodo}
         />
-        :
-        <div className='todo-image'>
-          <img src={reactlogo} className='logo' />
-        </div>
-      }
-    </div>
+        {todoList.length > 0 ?
+          <TodoData
+            todoList={todoList}
+            deletetodo={deletetodo}
+          />
+          :
+          <div className='todo-image'>
+            <img src={reactlogo} className='logo' />
+          </div>
+        }
+      </div>
+      <Footer />
+    </>
   )
 }
 
